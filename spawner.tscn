@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://8rgrc8c7i883"]
+
+[ext_resource type="Script" uid="uid://drx8tm8sv7f0l" path="res://spawner.gd" id="1_ttk4a"]
+[ext_resource type="Texture2D" uid="uid://dyybm8i6jx4g0" path="res://Assets/icon.svg" id="1_yp5lu"]
+
+[node name="Spawner" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ttk4a")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+texture = ExtResource("1_yp5lu")
